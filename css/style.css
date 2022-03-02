@@ -1,0 +1,448 @@
+/* @import "null.css"; */
+/* &display=swap */
+
+/* Базовые стили */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 20px 10px;
+}
+body {
+	font-family: "Libre Baskerville", serif;
+	font-size: 14px;
+	line-height: 1.75;
+	color: #5f6a72;
+	background-color: #eaeaea;
+}
+/* --------------------- */
+/* ===Header=== */
+/* Нижний отступ от верхнего меню до картинки */
+nav.header__menu.header__menu-top {
+	margin-bottom: 5px;
+}
+/* Все li во всех списках header: блочно-строчные */
+header .header__list li {
+	display: inline-block;
+}
+/* Выравнивание пунктов по правому краю, отступы, лого через бэкграунд */
+.header__list-top {
+	text-align: right;
+	padding: 5px;
+	background: url("../img/icons/logo@2x.png") 0 center / 154px 37px no-repeat;
+}
+.header__list-top li:not(:last-child) {
+	margin-right: 10px;
+}
+.header__list-top a {
+	display: inline-block;
+	padding: 5px;
+	text-transform: capitalize;
+	font-size: 10px;
+	font-weight: 700;
+}
+.header__list-top a.header__link:hover {
+	color: rgb(47, 134, 233);
+}
+.header__list-top a.header__link::after {
+	content: "";
+	display: block;
+	margin: 0px 0px 0px auto;
+	width: 20px;
+	height: 2px;
+	margin-top: 2px;
+	background-color: rgb(47, 134, 233);
+}
+.header__list-top a.header__link:hover::after {
+	width: 100%;
+}
+/* ===Header image=== */
+.header__image {
+	text-align: center;
+}
+.header__image img {
+	max-width: 100%;
+}
+/* ===header__info=== */
+header .header__info {
+	max-width: 480px;
+	padding: 20px;
+	color: white;
+	line-height: 1.2;
+	margin-top: -126.39px;
+}
+header .header__info > *:last-child {
+	margin-bottom: 0px;
+}
+.header__info .header__title {
+	font-size: 26px;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 10px;
+}
+.header__info p {
+	text-align: justify;
+	margin-bottom: 10px;
+}
+/* ===header__list-bottom-1=== */
+.header__list-bottom-1 {
+	font-family: "AvenirNextCyr";
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-size: 10px;
+	line-height: 1;
+	background-color: #394957;
+}
+.header__list-bottom-1 li {
+	min-height: 50px;
+}
+.header__list-bottom-1 li:not(:last-child) {
+	margin-right: 10px;
+}
+.header__list-bottom-1 a {
+	display: inline-block;
+	padding: 16px 10px 0px;
+	vertical-align: top;
+}
+.header__list-bottom-1 li:hover {
+	background-image: linear-gradient(to bottom, #5c7489, #435666);
+	color: #84b6dc;
+	border-bottom: 2px solid #84b6dc;
+	cursor: pointer;
+}
+.header__list-bottom-1 li:active {
+	box-shadow: inset 0 0 5px 2px darkslategray;
+	border-radius: 4px;
+}
+
+/* ===header__list-bottom-2=== */
+.header__list-bottom-2 {
+	font-family: "AvenirNextCyr";
+	font-size: 10px;
+	color: white;
+	text-transform: uppercase;
+	background-color: #2e3a46;
+	padding: 0px 10px;
+}
+.header__list-bottom-2 li a {
+	display: inline-block;
+	padding: 5px 0px 5px;
+}
+.header__list-bottom-2 li:not(:last-child) a::after {
+	content: "";
+	display: inline-block;
+	margin-left: 2px;
+	width: 16px;
+	height: 16px;
+	background: url("../img/icons/next.png") 0 -2px / contain no-repeat;
+	vertical-align: middle;
+}
+.header__list-bottom-2 a:hover {
+	text-decoration: underline;
+	color: darkgrey;
+}
+/* !=====Main============ */
+main {
+	margin-bottom: 20px;
+}
+.main__overview,
+.main__capabilities,
+.main__customers,
+.main__specifications {
+	background-image: linear-gradient(to bottom, #fff, #eeeff0);
+	padding: 20px;
+}
+h2.main__subtitle {
+	font-size: 40px;
+	color: #5f6a72;
+	line-height: 1;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	padding: 30px 0px;
+	margin-bottom: 40px;
+}
+.main h2::first-letter {
+	color: rgba(9, 88, 55, 0.781);
+}
+.main__paragraph {
+	padding-bottom: 40px;
+}
+.main__paragraph::first-line {
+	color: cadetblue;
+}
+/* ===Advanced Capabilities=== */
+.main__image-link-capabilities {
+	margin: 0 auto 10px;
+	max-width: 960px;
+	min-height: 410px;
+	background: url("../img/f15_strike_eagle_hotspot_bg_960x410.png") center / cover no-repeat;
+}
+.main__capabilities .main__link {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	outline: 2px solid rgba(218, 165, 32, 0.733);
+	color: goldenrod;
+	font-size: 30px;
+	text-align: center;
+	line-height: 1;
+}
+/* Преступное позиционирование ссылок, слетающее при первом изменении масштаба */
+.main__link-capabilities-1 {
+	margin-left: 73%;
+	margin-top: 14.5%;
+}
+.main__link-capabilities-2 {
+	margin-left: 33%;
+}
+.main__link-capabilities-3 {
+	margin-left: 12%;
+}
+.main__link-capabilities-4 {
+	margin-left: 8%;
+}
+.main__link-capabilities-5 {
+	margin-left: 53%;
+}
+.main__link-capabilities-6 {
+	margin-left: 40%;
+	margin-top: 3.5%;
+}
+/* hover&active for links */
+.main__link:hover span {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	outline: 8px solid rgb(212, 201, 201);
+	opacity: 0.7;
+	transform: scale(1.8);
+}
+.main__link:active span {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	outline: 8px solid rgb(243, 238, 238);
+	transform: scale(1.4);
+	opacity: 0.9;
+}
+/* Content */
+.main__capabilities-content {
+	font-family: "AvenirNextCyr", sans-serif;
+	line-height: 1.5;
+	text-align: center;
+	max-width: 650px;
+	margin: 0 auto;
+}
+.content-1,
+.content-2,
+.content-3,
+.content-4,
+.content-5,
+.content-6 {
+	display: none;
+	margin-bottom: 10px;
+}
+#tab-1:target ~ .main__capabilities-content .content-1,
+#tab-2:target ~ .main__capabilities-content .content-2,
+#tab-3:target ~ .main__capabilities-content .content-3,
+#tab-4:target ~ .main__capabilities-content .content-4,
+#tab-5:target ~ .main__capabilities-content .content-5,
+#tab-6:target ~ .main__capabilities-content .content-6 {
+	display: block;
+}
+/* ---Стилизуем кнопку Закрыть--- */
+#tab-1:target ~ .main__capabilities-content a.close-btn,
+#tab-2:target ~ .main__capabilities-content a.close-btn,
+#tab-3:target ~ .main__capabilities-content a.close-btn,
+#tab-4:target ~ .main__capabilities-content a.close-btn,
+#tab-5:target ~ .main__capabilities-content a.close-btn,
+#tab-6:target ~ .main__capabilities-content a.close-btn {
+	display: inline-block;
+}
+.main__capabilities-content a.close-btn {
+	display: none;
+	text-transform: uppercase;
+	padding: 6px 20px;
+	font-weight: 700;
+	color: cadetblue;
+	text-decoration: underline;
+}
+.main__capabilities-content a.close-btn::after {
+	content: "";
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	vertical-align: top;
+	background: url("../img/icons/close.png") center / contain no-repeat;
+}
+.main__capabilities-content a.close-btn:hover {
+	text-decoration: none;
+	color: #2e3a46;
+}
+.main__capabilities-content a.close-btn:hover::after {
+	transform: rotate(45deg);
+}
+/* --- */
+
+/* Стилизуем блоки картинки и текста */
+.content-image,
+.content-text {
+	display: inline-block;
+	max-width: 48.5%;
+}
+.content-image {
+	margin-right: 10px;
+	vertical-align: top;
+	box-shadow: -2px 2px 8px 3px black;
+}
+.content-image:hover {
+	box-shadow: -1px 1px 6px 1px black;
+}
+.content-image img {
+	max-width: 100%;
+}
+.content-text > *:last-child {
+	margin-bottom: 0px;
+}
+.content-text {
+	background: #eeeff0;
+	padding: 6px;
+	border-radius: 6px;
+	min-height: 203.92px;
+}
+.content-text:hover {
+	box-shadow: inset 0px 0px 8px 1px black;
+}
+.content-text-subtitle {
+	text-align-last: left;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.content-text-paragraph {
+	margin-bottom: 10px;
+	text-align: justify;
+}
+/* ===Customers=== */
+.main__customers h2 + p.main__paragraph {
+	padding-bottom: 0;
+	margin-bottom: 20px;
+}
+.main__customers-flags {
+	margin-bottom: 20px;
+	text-align: center;
+}
+.main__customers-flags:last-child {
+	margin-bottom: 0;
+}
+.main__customers-flags-item {
+	display: inline-block;
+	max-width: 20%;
+	padding: 10px;
+	cursor: pointer;
+}
+.main__customers-flags-item:not(:last-child) {
+	margin-right: 10px;
+}
+.main__customers-flags-item > *:last-child {
+	margin-bottom: 0;
+}
+.main__customers-flags-item img {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+h3.main__customers-flags-country {
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 12px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	visibility: hidden;
+}
+.main__customers-flags-item:hover h3.main__customers-flags-country {
+	visibility: visible;
+}
+.main__customers-flags-item:hover img {
+	margin: -1px;
+	box-shadow: 0 3px 3px 3px darkgrey;
+	border-radius: 4px;
+}
+/* ===Specifications=== */
+.main__specifications h2 {
+	cursor: pointer;
+}
+.main__specifications h2::after {
+	content: "";
+	display: block;
+	margin-top: 20px;
+	min-height: 6px;
+	max-width: 35%;
+	background: #51585f;
+}
+.main__specifications h2:hover::after {
+	max-width: 70%;
+}
+.main__specifications-item > * {
+	display: inline-block;
+}
+.main__specifications-item:not(:last-child) {
+	margin-bottom: 15px;
+}
+.main__specifications-item p:first-child {
+	min-width: 25%;
+	vertical-align: top;
+}
+.main__specifications-item p:last-child {
+	max-width: 60%;
+	padding-left: 20px;
+}
+.main__specifications-item p:first-of-type {
+	font-family: "AvenirNextCyr", sans-serif;
+	text-transform: capitalize;
+	text-decoration: underline;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+}
+.main__specifications-items > *:nth-child(odd):hover ~ *:nth-child(even) {
+	background-color: #e5e8eb8a;
+}
+.main__specifications-items > *:nth-child(even):hover ~ *:nth-child(odd) {
+	background-color: #e5e8eb8a;
+}
+.main__specifications-item p:last-of-type {
+	opacity: 0.6;
+}
+.main__specifications-item p:first-of-type:hover + p:last-of-type {
+	opacity: 1;
+	font-style: italic;
+	font-weight: 700;
+}
+/* ===Footer=== */
+footer {
+	text-align: center;
+}
+.footer__btn {
+	display: inline-block;
+	border-radius: 6px;
+	box-shadow: 0 2px 4px 2px grey;
+	padding: 8px 35px;
+	background: linear-gradient(to right, rgba(207, 107, 61, 0.664), rgba(228, 91, 28, 0.801));
+	font-weight: 700;
+	color: white;
+	text-shadow: 0 3px 4px black;
+	letter-spacing: 2px;
+}
+.footer__btn:hover {
+	margin-top: 0.5px;
+	box-shadow: 0 1px 4px 1px grey;
+}
+.footer__btn:active {
+	box-shadow: inset 0 0 4px 1px grey;
+	color: rgb(241, 230, 230);
+}

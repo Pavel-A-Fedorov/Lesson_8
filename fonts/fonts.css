@@ -1,0 +1,41 @@
+/* 
+font-family: 'Libre Baskerville', serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* 
+Категории: Рубленные шрифты (Sans Serif), Современные шрифты (Modern)
+font-family: "AvenirNextCyr", sans-serif;
+*/
+@font-face {
+	font-family: "AvenirNextCyr";
+	src: url("AvenirNextCyr/AvenirNextCyr-Regular.woff2") format("woff2"),
+		url("AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "AvenirNextCyr";
+	src: url("AvenirNextCyr/AvenirNextCyr-Italic.woff2") format("woff2"),
+		url("AvenirNextCyr/AvenirNextCyr-Italic.woff") format("woff");
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: "AvenirNextCyr";
+	src: url("AvenirNextCyr/AvenirNextCyr-Bold.woff2") format("woff2"),
+		url("AvenirNextCyr/AvenirNextCyr-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "AvenirNextCyr";
+	src: url("AvenirNextCyr/AvenirNextCyr-BoldItalic.woff2") format("woff2"),
+		url("AvenirNextCyr/AvenirNextCyr-BoldItalic.woff") format("woff");
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
